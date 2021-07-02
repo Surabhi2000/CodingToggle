@@ -1,7 +1,8 @@
+
 .container{
-    height: 120vh;
-    margin: -2rem;
-    background-color: #ffe082;
+    height: 105vh;
+    margin:  -1rem;
+    background-color: #f1f0ed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +11,7 @@
 
 .switch{
     position: relative;
-    display: inline-block;
+    display: block;
     width: 100px;
     height: 40px;
 }
@@ -28,7 +29,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ffecb3;
+    background-color: #c7c3c0;
     transition: 0.4s;
 }
 
@@ -41,7 +42,7 @@
 }
 
 input:checked + .slider{
-    background-color: #323E52;
+    background-color: #1e2125;
 }
 
 input:focus + .slider{
@@ -63,7 +64,7 @@ input:checked + .slider:before{
 input+ .slider.round:before{
     font-size: 25px;
     background: transparent;
-    content: "👩🏾‍💻";
+    content: "💻";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,18 +73,21 @@ input+ .slider.round:before{
 input:checked + .slider.round:before{
     font-size: 25px;
     background: transparent;
-    content: "💻";
+    content: "👩🏾‍💻";
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .dark{
-    background-color: #222838;
+    background-color: #06080c;
+    color: #fff;
+    font-size: 20px;
 }
 
 .light{
     background-color: #ecbc36;
+    font-size: 12px;
 }
 
 @keyframes rot {
